@@ -10,16 +10,23 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
     <ImageView
         android:id="@+id/imageview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"
+        android:visibility="invisible"
         />
 
     <TextView
         android:id="@+id/textview1"
-        android:text="@string/textview"
+        android:text="@string/textview_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#0099ff"
@@ -40,13 +47,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_a"
-        android:onClick="CatFury"
+        android:onClick="DogQuestion"
         />
 
     <ProgressBar
-        android:id="@+id/progressbar1"
+        android:id="@+id/progressbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
         />
 
     <ImageView
