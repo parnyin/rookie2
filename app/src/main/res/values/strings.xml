@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">二货猫2</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="textview">Hello, I am a cat, how about you?</string>
+    <string name="button_a">I am not a dog!</string>
+    <string name="button_b">Forgive me! I want to try again!</string>
+    <string name="hint">Tell me that you are a dog.</string>
+    <string name="toast">No!!! I know you are a DOG!!!</string>
+</resources>
