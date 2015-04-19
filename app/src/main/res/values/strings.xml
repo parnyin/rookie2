@@ -12,6 +12,8 @@
     <string name="dialog1_message">Want some bone with meat?</string>
     <string name="dialog2_title">You Lied!</string>
     <string name="dialog2_message">You are not welcomed! DOG! Get out of here!</string>
+    <string name="dialog3_title">Dog Killing Machine</string>
+    <string name="dialog3_message">Initializing...</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="quit">WOOF!!!</string>

@@ -1,6 +1,7 @@
 package com.example.lenovo.myapplication;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -47,19 +48,17 @@ public class MainActivity extends ActionBarActivity {
 
 
     public void DogQuestion(View view){
-        Log.d("dDDDDDDD","DSDD");
         TextView textview1 = (TextView) findViewById(R.id.textview1);
         Button button1 = (Button) findViewById(R.id.button1);
         ProgressBar progressbar1 = (ProgressBar) findViewById(R.id.progressbar1);
         ImageView imageview1 = (ImageView) findViewById(R.id.imageview1);
         ImageView imageview2 = (ImageView) findViewById(R.id.imageview2);
 
-        Log.d("6666666666D",this.getString(R.string.button_a));
         if(button1.getText().toString().equals(this.getString(R.string.button_a))){
             AlertDialog.Builder dialog1 = new AlertDialog.Builder(MainActivity.this);
             dialog1.setTitle(R.string.dialog1_title);
             dialog1.setMessage(R.string.dialog1_message);
-            dialog1.setCancelable(true);
+            dialog1.setCancelable(false);
             dialog1.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int i) {
                     TextView textview1 = (TextView) findViewById(R.id.textview1);
@@ -91,6 +90,11 @@ public class MainActivity extends ActionBarActivity {
                         dialog2.setMessage(R.string.dialog2_message);
                         dialog2.setPositiveButton(R.string.quit,new DialogInterface.OnClickListener(){
                             public void onClick(DialogInterface dialog, int i){
+//                                todo: wait some time and then close
+//                                ProgressDialog.Builder dialog3 = new ProgressDialog.Builder(MainActivity.this);
+//                                dialog3.setTitle(R.string.dialog3_title);
+//                                dialog3.setMessage(R.string.dialog3_message);
+//                                dialog3.show();
                                 MainActivity.this.finish();
                             }
                         });
